@@ -24,7 +24,7 @@ const Search = () => {
     }
 
     //поправи на бг 
-    return 'Навякъде';
+    return 'Навсякъде';
   }, [locationValue, getByValue]);
 
   const durationLabel = useMemo(() => {
