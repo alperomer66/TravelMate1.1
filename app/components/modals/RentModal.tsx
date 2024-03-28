@@ -98,14 +98,14 @@ const RentModal = () => {
 
     axios.post('/api/listings', data)
     .then(() => {
-      toast.success('Успешно създаде обява!');
+      toast.success('Listing created!');
       router.refresh();
       reset();
       setStep(STEPS.CATEGORY)
       rentModal.onClose();
     })
     .catch(() => {
-      toast.error('Нещо се обърка.');
+      toast.error('Something went wrong.');
     })
     .finally(() => {
       setIsLoading(false);
@@ -114,10 +114,10 @@ const RentModal = () => {
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.PRICE) {
-      return 'Създай'
+      return 'Create'
     }
 
-    return 'Следващо'
+    return 'Next'
   }, [step]);
 
   const secondaryActionLabel = useMemo(() => {
@@ -125,14 +125,14 @@ const RentModal = () => {
       return undefined
     }
 
-    return 'Назад'
+    return 'Back'
   }, [step]);
 
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Коя категория описва най-добре мястото ти?"
-        subtitle="Избери категория"
+        title="Which of these best describes your place?"
+        subtitle="Pick a category"
       />
       <div 
         className="
@@ -163,8 +163,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Къде се намира?"
-          subtitle="Помогни на гостите да те намерят!"
+          title="Where is your place located?"
+          subtitle="Help guests find you!"
         />
         <CountrySelect 
           value={location} 
@@ -179,28 +179,28 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Избери с какво разполага мястото"
-          subtitle="Какви удобства предлагаш?"
+          title="Share some basics about your place"
+          subtitle="What amenitis do you have?"
         />
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}
-          title="Гости" 
-          subtitle="Колко гости можеш да приемеш?"
+          title="Guests" 
+          subtitle="How many guests do you allow?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('roomCount', value)}
           value={roomCount}
-          title="Стаи" 
-          subtitle="С колко стаи разполагаш?"
+          title="Rooms" 
+          subtitle="How many rooms do you have?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('bathroomCount', value)}
           value={bathroomCount}
-          title="Бани" 
-          subtitle="С колко бани разполагаш?"
+          title="Bathrooms" 
+          subtitle="How many bathrooms do you have?"
         />
       </div>
     )
@@ -210,8 +210,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Качи снимка на мястото ти"
-          subtitle="Покажи на гостите как изглежда мястото ти"
+          title="Add a photo of your place"
+          subtitle="Show guests what your place looks like!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -225,12 +225,12 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Как ти би описал мястото си"
-          subtitle="Кратко, точно и ясно!"
+          title="How would you describe your place?"
+          subtitle="Short and sweet works best!"
         />
         <Input
           id="title"
-          label="Заглавие"
+          label="Title"
           disabled={isLoading}
           register={register}
           errors={errors}
@@ -239,7 +239,7 @@ const RentModal = () => {
         <hr />
         <Input
           id="description"
-          label="Описание"
+          label="Description"
           disabled={isLoading}
           register={register}
           errors={errors}
@@ -253,12 +253,12 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Задай обявата си"
-          subtitle="Колко струва нощувката?"
+          title="Now, set your price"
+          subtitle="How much do you charge per night?"
         />
         <Input
           id="price"
-          label="Цена"
+          label="Price"
           formatPrice 
           type="number" 
           disabled={isLoading}
@@ -274,7 +274,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="TravelMate your home!"
+      title="Airbnb your home!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}

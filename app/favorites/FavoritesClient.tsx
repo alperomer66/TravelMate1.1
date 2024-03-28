@@ -8,7 +8,6 @@ interface FavoritesClientProps {
   listings: SafeListing[],
   currentUser?: SafeUser | null,
 }
-//поправи 
 const FavoritesClient: React.FC<FavoritesClientProps> = ({
   listings,
   currentUser
@@ -16,8 +15,8 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
   return (
     <Container>
       <Heading
-        title="Любими"
-        subtitle="Списък с любими!"
+        title="Favotites"
+        subtitle="List of places you favorited!"
       />
       <div 
         className="

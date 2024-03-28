@@ -58,7 +58,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             cursor-pointer
           "
         >
-          Добави обява
+          Add your palce
         </div>
         <div 
         onClick={toggleOpen}
@@ -104,39 +104,39 @@ const UserMenu: React.FC<UserMenuProps> = ({
             {currentUser ? (
               <>
                 <MenuItem 
-                  label="Пътувания" 
+                  label="My trips" 
                   onClick={() => router.push('/trips')}
                 />
                 <MenuItem 
-                  label="Любими" 
+                  label="My lists" 
                   onClick={() => router.push('/favorites')}
                 />
                 <MenuItem 
-                  label="Резервации" 
+                  label="My reservations" 
                   onClick={() => router.push('/reservations')}
                 />
                 <MenuItem 
-                  label="Моите обяви" 
+                  label="My places" 
                   onClick={() => router.push('/properties')}
                 />
                 <MenuItem 
-                  label="Добави обява" 
+                  label="Add your place" 
                   onClick={rentModal.onOpen}
                 />
                 <hr />
                 <MenuItem 
-                  label="Изход" 
+                  label="Logout" 
                   onClick={() => signOut()}
                 />
               </>
             ) : (
               <>
                 <MenuItem 
-                  label="Вход" 
+                  label="Login" 
                   onClick={loginModal.onOpen}
                 />
                 <MenuItem 
-                  label="Регистрация" 
+                  label="Sign In" 
                   onClick={registerModal.onOpen}
                 />
               </>

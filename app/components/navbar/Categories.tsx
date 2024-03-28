@@ -26,37 +26,37 @@ export const categories = [
   {
     label: 'Beach',
     icon: TbBeach,
-    description: 'Това е много близо до плажа!',
+    description: 'This property is near the beach!',
   },
   {
     label: 'Windmills',
     icon: GiWindmill,
-    description: 'Вкусът на старото време!',
+    description: 'This property is near the Windmills!',
   },
   {
     label: 'Modern',
     icon: MdOutlineVilla,
-    description: 'В крак с модата'
+    description: 'This property is a modern'
   },
   {
     label: 'Countryside',
     icon: TbMountain,
-    description: 'Избягай от сивия град!'
+    description: 'This property is near the Countryside'
   },
   {
     label: 'Pools',
     icon: TbPool,
-    description: 'Време е за прохлада!'
+    description: 'This property have a pool'
   },
   {
     label: 'Islands',
     icon: GiIsland,
-    description: 'Нещо егзотично!'
+    description: 'This property is in the Island'
   },
   {
     label: 'Lake',
     icon: GiBoatFishing,
-    description: 'И за риба и за отдих!'
+    description: 'This property is near the lake'
   },
   {
     label: 'Skiing',

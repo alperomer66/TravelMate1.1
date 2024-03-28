@@ -70,8 +70,8 @@ const LoginModal = () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Добре дошъл отново!"
-        subtitle="Влез в акаунта си!"
+        title="Welcome back"
+        subtitle="Login to your account!"
       />
       <Input
         id="email"
@@ -98,19 +98,19 @@ const LoginModal = () => {
       <hr />
       <Button 
         outline 
-        label="Продължи с Google"
+        label="Continue with Google"
         icon={FcGoogle}
         onClick={() => signIn('google')}
       />
       <Button 
         outline 
-        label="Продължи с Github"
+        label="Continue with Github"
         icon={AiFillGithub}
         onClick={() => signIn('github')}
       />
       <div className="
       text-neutral-500 text-center mt-4 font-light">
-        <p>Нов си в TravelMate?
+        <p>First time using TravelMate?
           <span 
             onClick={onToggle} 
             className="
@@ -118,7 +118,7 @@ const LoginModal = () => {
               cursor-pointer 
               hover:underline
             "
-            > Създай акаунт</span>
+            >Create an account</span>
         </p>
       </div>
     </div>
@@ -128,8 +128,8 @@ const LoginModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={loginModal.isOpen}
-      title="Вход"
-      actionLabel="Продължи"
+      title="Login"
+      actionLabel="Continue"
       onClose={loginModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}

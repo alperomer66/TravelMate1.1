@@ -24,7 +24,7 @@ const Search = () => {
     }
 
     //поправи на бг 
-    return 'Навсякъде';
+    return 'Anywhere';
   }, [locationValue, getByValue]);
 
   const durationLabel = useMemo(() => {
@@ -40,7 +40,7 @@ const Search = () => {
       return `${diff} Days`;
     }
 
-    return 'Всяка седмица'
+    return 'Any week'
   }, [startDate, endDate]);
 
   const guestLabel = useMemo(() => {
@@ -48,7 +48,7 @@ const Search = () => {
       return `${guestCount} Guests`;
     }
 
-    return 'Гости';
+    return 'Guests';
   }, [guestCount]);
 
   return ( 

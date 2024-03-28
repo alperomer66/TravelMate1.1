@@ -44,7 +44,7 @@ const RegisterModal= () => {
 
     axios.post('/api/register', data)
     .then(() => {
-      toast.success('Готово!');
+      toast.success('Registered!');
       registerModal.onClose();
       loginModal.onOpen();
     })
@@ -64,8 +64,8 @@ const RegisterModal= () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Добре дошъл в TravelMate"
-        subtitle="Създай си акаунт!"
+        title="Welcome to TravelMate"
+        subtitle="Create an account!"
       />
       <Input
         id="email"
@@ -77,7 +77,7 @@ const RegisterModal= () => {
       />
       <Input
         id="name"
-        label="Име"
+        label="Name"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -85,7 +85,7 @@ const RegisterModal= () => {
       />
       <Input
         id="password"
-        label="Парола"
+        label="Password"
         type="password"
         disabled={isLoading}
         register={register}
@@ -100,13 +100,13 @@ const RegisterModal= () => {
       <hr />
       <Button 
         outline 
-        label="Продължи с Google"
+        label="Continue with Google"
         icon={FcGoogle}
         onClick={() => signIn('google')} 
       />
       <Button 
         outline 
-        label="Продължи с Github"
+        label="Continue with Github"
         icon={AiFillGithub}
         onClick={() => signIn('github')}
       />
@@ -118,7 +118,7 @@ const RegisterModal= () => {
           font-light
         "
       >
-        <p>Вече имаш акаунт?
+        <p>Already have an account?
           <span 
             onClick={onToggle} 
             className="
