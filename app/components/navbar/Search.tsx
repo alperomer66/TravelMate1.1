@@ -25,6 +25,7 @@ const Search = () => {
 
     //поправи на бг 
     return 'Anywhere';
+
   }, [locationValue, getByValue]);
 
   const durationLabel = useMemo(() => {
