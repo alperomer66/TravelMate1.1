@@ -58,7 +58,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             cursor-pointer
           "
         >
-          Add your palce
+          Add your place 
         </div>
         <div 
         onClick={toggleOpen}
