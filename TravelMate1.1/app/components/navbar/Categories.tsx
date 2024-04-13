@@ -20,6 +20,7 @@ import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
 
+//поправи всичко на бг
 
 export const categories = [
   {

@@ -23,7 +23,9 @@ const Search = () => {
       return getByValue(locationValue as string)?.label;
     }
 
+    //поправи на бг 
     return 'Anywhere';
+
   }, [locationValue, getByValue]);
 
   const durationLabel = useMemo(() => {
@@ -39,7 +41,7 @@ const Search = () => {
       return `${diff} Days`;
     }
 
-    return 'Any Week'
+    return 'Any week'
   }, [startDate, endDate]);
 
   const guestLabel = useMemo(() => {
@@ -47,7 +49,7 @@ const Search = () => {
       return `${guestCount} Guests`;
     }
 
-    return 'Add Guests';
+    return 'Guests';
   }, [guestCount]);
 
   return ( 
@@ -112,7 +114,7 @@ const Search = () => {
           <div 
             className="
               p-2 
-              bg-rose-500 
+              bg-blue-900
               rounded-full 
               text-white
             "

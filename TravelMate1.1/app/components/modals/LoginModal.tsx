@@ -110,7 +110,7 @@ const LoginModal = () => {
       />
       <div className="
       text-neutral-500 text-center mt-4 font-light">
-        <p>First time using Airbnb?
+        <p>First time using TravelMate?
           <span 
             onClick={onToggle} 
             className="
@@ -118,7 +118,7 @@ const LoginModal = () => {
               cursor-pointer 
               hover:underline
             "
-            > Create an account</span>
+            >Create an account</span>
         </p>
       </div>
     </div>

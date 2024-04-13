@@ -10,10 +10,10 @@ interface EmptyStateProps {
   subtitle?: string;
   showReset?: boolean;
 }
-
+//поправи на бг
 const EmptyState: React.FC<EmptyStateProps> = ({
-  title = "No exact matches",
-  subtitle = "Try changing or removing some of your filters.",
+  title = "Sorry, we don't find any places!",
+  subtitle = "Try to change some filtes",
   showReset
 }) => {
   const router = useRouter();
@@ -38,7 +38,7 @@ const EmptyState: React.FC<EmptyStateProps> = ({
         {showReset && (
           <Button
             outline
-            label="Remove all filters"
+            label="Remove filtes"
             onClick={() => router.push('/')}
           />
         )}
