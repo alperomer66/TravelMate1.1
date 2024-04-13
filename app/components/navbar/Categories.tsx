@@ -20,82 +20,83 @@ import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
 
+//поправи всичко на бг
 
 export const categories = [
   {
     label: 'Beach',
     icon: TbBeach,
-    description: 'This property is close to the beach!',
+    description: 'This property is near the beach!',
   },
   {
     label: 'Windmills',
     icon: GiWindmill,
-    description: 'This property is has windmills!',
+    description: 'This property is near the Windmills!',
   },
   {
     label: 'Modern',
     icon: MdOutlineVilla,
-    description: 'This property is modern!'
+    description: 'This property is a modern'
   },
   {
     label: 'Countryside',
     icon: TbMountain,
-    description: 'This property is in the countryside!'
+    description: 'This property is near the Countryside'
   },
   {
     label: 'Pools',
     icon: TbPool,
-    description: 'This is property has a beautiful pool!'
+    description: 'This property have a pool'
   },
   {
     label: 'Islands',
     icon: GiIsland,
-    description: 'This property is on an island!'
+    description: 'This property is in the Island'
   },
   {
     label: 'Lake',
     icon: GiBoatFishing,
-    description: 'This property is near a lake!'
+    description: 'This property is near the lake'
   },
   {
     label: 'Skiing',
     icon: FaSkiing,
-    description: 'This property has skiing activies!'
+    description: 'За любители на зимните спортове!'
   },
   {
     label: 'Castles',
     icon: GiCastle,
-    description: 'This property is an ancient castle!'
+    description: 'Като в приказките!'
   },
   {
     label: 'Caves',
     icon: GiCaveEntrance,
-    description: 'This property is in a spooky cave!'
+    description: 'За любителите на екстремното!'
   },
   {
     label: 'Camping',
     icon: GiForestCamp,
-    description: 'This property offers camping activities!'
+    description: 'Сред природата с приятели!'
   },
   {
     label: 'Arctic',
     icon: BsSnow,
-    description: 'This property is in arctic environment!'
+    description: 'Усети истинският студ!'
   },
   {
     label: 'Desert',
     icon: GiCactus,
-    description: 'This property is in the desert!'
+    description: 'Жегата се търпи! '
   },
   {
     label: 'Barns',
     icon: GiBarn,
-    description: 'This property is in a barn!'
+    description: 'Петелът ще те събуди, нямаш нужда от аларма!'
   },
   {
     label: 'Lux',
     icon: IoDiamond,
-    description: 'This property is brand new and luxurious!'
+    description: 'Поглези се!'
   }
 ]
 
